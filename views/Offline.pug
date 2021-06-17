@@ -1,0 +1,11 @@
+extends layout
+include common/Navbar
+include common/Footer
+
+block layout-content
+  +Navbar
+  .Container.OfflineView
+    h1.Banner Oops! 
+    p.Offline-text We are currently offline
+    p.Offline-text Our Website is open Monday to Friday from 9am to 5pm
+    +Footer

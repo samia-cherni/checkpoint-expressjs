@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    background-color: grey;
+}
+.Container {
+    min-height: 150vh;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    padding: 5% 0;
+    }
+.Banner {
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin:auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+    padding: 15px;
+}
+.Services{
+    color:black;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width:30%;
+    margin-top: 3%;
+}
+.card p{
+    color:black;
+    text-align: center;
+}
+.desc{
+    width:80%;
+    margin:5% auto;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    text-shadow: 0.5px 0.5px #212529;
+}
+footer {
+    background-color: #212529;
+    color: #fff;
+    position: absolute;
+    padding: 1% 0;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.HomeView {
+    background: url("home.jpg");
+    background-size: cover;
+}
+.ServicesView {
+    background: url("Services.jpg");
+    background-size: cover;
+}
+.ContactView {
+    background: url("contact.jpg");
+    background-size: cover;
+}
+
+.OfflineView {
+    background: url("offline.jpg");
+    background-size: cover;
+}
+.Offline-text {
+    margin-top: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.Message{
+    background-color: white;
+    padding:2%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:32%;
+    margin:25% 0 2% 5%;
+}
+.Navbutton{
+    padding:5%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width:50%;
+    margin: 10% auto;
+    padding: 1rem;
+    box-shadow: 0px 0px 6px 0px #808080b3;
+    border-radius: 10px;
+}
+  
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.form form input, .form form textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    outline: none;
+}
+  
+.form form label {
+    margin-top: 7px;
+}
+  
+.form button {
+    margin-top: 10px;
+    padding: 4px 10px;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+}

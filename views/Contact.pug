@@ -1,0 +1,22 @@
+extends layout
+include common/Navbar
+include common/Footer
+
+block layout-content
+  +Navbar
+  .Container.ContactView
+    h1.Banner #{title}
+    .form
+      h2 Feedback Form
+      form
+                label(for="name") Enter Your Name
+                input#name(type="text", name="name")
+                label(for="email") Enter Your Email
+                input#email(type="email", name="email")
+                label(for="feedback") Enter Your Feedback
+                textarea#feedback(
+                    name="feedback", 
+                    cols="30", rows="5"
+                )
+                button(type="submit") Submit            
+    +Footer
