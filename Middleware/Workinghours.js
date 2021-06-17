@@ -1,10 +1,13 @@
-function workingHours (req, res, next) {
-    var date = new Date();
-    if(date.getDay() > 0 && date.getDay() < 6 && date.getHours() > 9 && date.getHours < 17){
+function workingHours (req, res, next) { 
+    let ts = Date.now();
+    let date_ob = new Date(ts);
+    let day= date_ob.getDay();
+    let hour = date_ob.getHours();
+    if(day > 0 && day < 6 && hour > 9 && hour < 17){
         next();
     }else{
-        
         res.render('Offline',{title:'Offline'})
+        
     }
   };
 module.exports = workingHours;
