@@ -7,7 +7,7 @@ function logger(req, res, next) {
   let hours = date_ob.getHours();
   let minutes = date_ob.getMinutes();
   let seconds = date_ob.getSeconds();
-  console.log(req.url, "@", `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`);
+  console.log(req.url, "@", `${year}-${month<10?'0'+month:month}-${date<10?'0'+date:date} ${hours<10?'0'+hours:hours}:${minutes<10?'0'+minutes:minutes}:${seconds<10?'0'+seconds:seconds}`);
   next();
 }
 module.exports = logger;
