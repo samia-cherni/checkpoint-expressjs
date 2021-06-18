@@ -34,16 +34,22 @@ body {
 .Services{
     color:black;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .card{
     width:30%;
     margin-top: 3%;
+    padding:1%;
 }
 .card p{
     color:black;
     text-align: center;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .desc{
     width:80%;
@@ -51,7 +57,7 @@ body {
     color:white;
     font-weight:bold;
     text-align: center;
-    text-shadow: 0.5px 0.5px #212529;
+    text-shadow: 0.5px 0.5px #1a1b1d;
 }
 footer {
     background-color: #212529;
@@ -72,17 +78,20 @@ a {
     background-size: cover;
 }
 .ServicesView {
-    background: url("Services.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("Services.jpg");
     background-size: cover;
+    
 }
 .ContactView {
-    background: url("contact.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("contact.jpg");
     background-size: cover;
+    
 }
 
 .OfflineView {
-    background: url("offline.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("offline.jpg");
     background-size: cover;
+    
 }
 .Offline-text {
     margin-top: 1rem;
