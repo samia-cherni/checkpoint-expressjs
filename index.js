@@ -7,6 +7,7 @@
 
  const app = express();
  const port = process.env.PORT || "8000";
+ const router=require('./Routes/Router')
  const work = require('./Middleware/Workinghours');
  const logger=require('./Middleware/Logger');
 
@@ -17,17 +18,7 @@
  app.use(express.static(path.join(__dirname,'public')));
  app.use(work);
  app.use(logger);
- // Routes Definitions
- 
-  app.get('/',(req,res)=>{
-    res.render('Home',{title:'Home'})
-  });
-  app.get('/Services',(req,res)=>{
-    res.render('Services',{title:'Our Services'})
-  })
-  app.get('/Contact',(req,res)=>{
-    res.render('Contact',{title:'Contact Us'})
-  });
+ app.use(router);
   //Server Activation
  
  app.listen(port, () => {

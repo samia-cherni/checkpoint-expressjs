@@ -11,12 +11,14 @@
 body {
     background-color: grey;
 }
-.Container {
-    min-height: 150vh;
+ #root {
     font-family: 'Roboto Mono', monospace;
     position: relative;
-    padding: 5% 0;
     }
+.Container{
+    min-height: 150vh;
+    padding: 5% 0;
+}
 .Banner {
     color: #000;
     font-weight: bold;
@@ -36,7 +38,6 @@ body {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 5%;
 }
 .card{
     width:30%;
@@ -81,20 +82,22 @@ a {
 .ServicesView {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("Services.jpg");
     background-size: cover;
-    
 }
 .ContactView {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("contact.jpg");
     background-size: cover;
     
 }
-
 .OfflineView {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("offline.jpg");
     background-size: cover;
     
 }
-.Offline-text {
+.NotfoundView{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("animated.gif");
+    background-size: cover;
+}
+.Offline-text,.notfound-text {
     margin-top: 1rem;
     color: #fff;
     text-align: center;

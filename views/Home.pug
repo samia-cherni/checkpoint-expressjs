@@ -1,9 +1,7 @@
 extends layout
-include common/Navbar
-include common/Footer
 
 block layout-content
-  +Navbar 
+
   .Container.HomeView
     h1.Banner Welcome!
     .Message
@@ -12,4 +10,4 @@ block layout-content
         h3 Everytime
       .NavButton
         button(type="button" class="btn btn-outline-secondary") Dive in! 
-    +Footer    
+    
